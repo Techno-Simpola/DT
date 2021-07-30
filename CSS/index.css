@@ -254,73 +254,6 @@ textarea {
 }
 
 
-
-
-
-
-/* .card-fluid-container{
-background-color: rgba(0, 0, 0, 0.897);
-display:grid;
-justify-content: right;
-height: 700px;
-}
-
-.card-fluid-container {
-    /* display: flex; */
-/* justify-content:right;
-    vertical-align: text-top;
-    background-color: rgba(0, 0, 0, 0.897); */
-/* flex-wrap: wrap; */
-/* margin: 100px 0px; */
-/* max-width: 100%;
-    overflow:hidden;
-} */
-
-/* .card-container:last-child{
-    /* padding-right: 50px; */
-
-/* .cards {
-    width: 250px;
-    height: 250px;
-    background: rgba(0, 0, 0, 0.897);
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px 0px #313131;
-    background-size: 102%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    position: relative;
-}
-.card1 {
-
-    background-image: url("https://i.pinimg.com/564x/29/c1/37/29c1370e77372a49bfe5278990ce2829.jpg");
-} */
-
-/* .card2 {
-    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/771736672668964167/C60BACF8759C183D6AB7F98C3DE7263EFE672906/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
- 
-} */
-
-/* .card3 {
-    background-image: url("https://i.pinimg.com/564x/3f/c4/aa/3fc4aa033d8185f57a02528283e60ad8.jpg");
-}  */
-
-/* .bottom-bar {
-    width: 100%;
-    height: 45px;
-    position: absolute;
-    bottom: -100%;
-    background: mediumslateblue;
-    transition: all 0.3s;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    border-top: 1px solid #3333;
-} */
-
-
 .header-extradiv {
   position: relative;
   display: flex;
@@ -374,25 +307,55 @@ height: 700px;
 }
 
 
+/* ANIMATION CONTAINER */
 
-/* MAIN SLIDER STARTING*/
-/* 
-.card {
-  width: 250px;
-  height: 250px;
-  margin-top: 10px;
-  background-color: #1b1b1b;
-  display: block;
-
+.container-animate {
+  position: relative;
+  display: grid;
+  justify-content: right;
+  align-items: right;
+  overflow: hidden;
+  height: 600px;
 }
 
+.upper-animate {
+  display: flex;
+  position: relative;
+}
 
-@keyframes slideUP {
+.card {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: black;
+}
 
+.card img {
+  border-radius: 10px;
+}
+
+.cards-moving-1 {
+  position: relative;
+  top: 0;
+  animation: scroll-1 60s linear 0s infinite;
+}
+
+.cards-moving-2 {
+  position: relative;
+  bottom: 69%;
+  animation: scroll-2 60s linear 0s infinite;
+}
+
+@keyframes scroll-1 {
   100% {
-    bottom: -100%;
+    top: -100%;
   }
-} */
+}
+
+@keyframes scroll-2 {
+  100% {
+    bottom: 0;
+  }
+}
 
 
 /*************************************************** TIMLINE ONN *********************************************************************/
