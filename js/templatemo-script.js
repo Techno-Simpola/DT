@@ -13,26 +13,26 @@ const setBg = id => {
     $.backstretch('show', id);
 }
 
-const setBgOverlay = () => {
-    const windowWidth = window.innerWidth;
-    const bgHeight = $('body').height();
-    const tmBgLeft = $('.tm-bg-left');
+// const setBgOverlay = () => {
+//     const windowWidth = window.innerWidth;
+//     const bgHeight = $('body').height();
+//     const tmBgLeft = $('.tm-bg-left');
 
-    $('.tm-bg').height(bgHeight);
+//     $('.tm-bg').height(bgHeight);
 
-    if(windowWidth > 768) {
-        tmBgLeft.css('border-left', `0`)
-                .css('border-top', `${bgHeight}px solid transparent`);                
-    } else {
-        tmBgLeft.css('border-left', `${windowWidth}px solid transparent`)
-                .css('border-top', `0`);
-    }
-}
+//     if(windowWidth > 768) {
+//         tmBgLeft.css('border-left', `0`)
+//                 .css('border-top', `${bgHeight}px solid transparent`);                
+//     } else {
+//         tmBgLeft.css('border-left', `${windowWidth}px solid transparent`)
+//                 .css('border-top', `0`);
+//     }
+// }
 
 $(document).ready(function () {
-    const autoplayBg = true;	// set Auto Play for Background Images
+    const autoplayBg = false;	// set Auto Play for Background Images
     initBg(autoplayBg);    
-    setBgOverlay();
+    // setBgOverlay();
 
     const bgControl = $('.tm-bg-control');            
     bgControl.click(function() {
@@ -49,9 +49,9 @@ $(document).ready(function () {
         current.addClass('active');
     });
 
-    $(window).resize(function() {
-        setBgOverlay();
-    });
+    // $(window).resize(function() {
+    //     setBgOverlay();
+    // });
 });
 
 const sliderContainer = document.querySelector(".slider-container");

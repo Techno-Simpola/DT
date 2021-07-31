@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa&display=swap');
+
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 17px;
@@ -8,7 +13,7 @@ body {
   color: white;
   overflow: visible;
   min-width: 760px;
-  background: rgba(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 .tm-sitename {
   font-family: "Brush Script MT", cursive !important;
@@ -95,7 +100,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: rgba(0, 0, 0, 1) !important;
 }
 
 /* Page Background */
@@ -217,6 +221,11 @@ hr {
   color: #9cc;
 }
 
+.text-white{
+   font-weight: bold;
+}
+
+
 /* Service */
 .tm-service-text {
   max-width: 365px;
@@ -253,6 +262,9 @@ textarea {
   outline: none;
 }
 
+.form-control::placeholder{
+   color: rgb(153, 153, 153) !important;
+}
 
 .header-extradiv {
   position: relative;
@@ -306,16 +318,41 @@ textarea {
   transition: 0.5s ease-in-out;
 }
 
-
 /* ANIMATION CONTAINER */
 
-.container-animate {
+.fluid-container-animate {
+  background-color: #1b1b1b;
   position: relative;
-  display: grid;
-  justify-content: right;
-  align-items: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.great-animate {
+  display: flex;
+  background-color: #1b1b1b;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 500px;
+  box-shadow: 0px 0px 80px 0px rgba(70, 70, 70, 0.5);
+  border-radius: 10px;
+}
+
+.content-animate {
+  display: flex;
+}
+
+.text-known{
+  width: 600px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.text-white-1{
+  font-family: 'Abril Fatface', cursive;
+  padding-bottom: 10px;
 }
 
 .upper-animate {
@@ -324,9 +361,12 @@ textarea {
 }
 
 .card {
-  margin: 10px;
   border-radius: 10px;
-  background-color: black;
+  background-color: #1b1b1b;
+}
+
+.card-1{
+ margin-bottom: 10px;
 }
 
 .card img {
@@ -334,15 +374,17 @@ textarea {
 }
 
 .cards-moving-1 {
+  margin-right: 10px;
+  margin-left: 10px;
   position: relative;
   top: 0;
-  animation: scroll-1 60s linear 0s infinite;
+  animation: scroll-1 20s linear 0s infinite;
 }
 
 .cards-moving-2 {
   position: relative;
   bottom: 69%;
-  animation: scroll-2 60s linear 0s infinite;
+  animation: scroll-2 20s linear 0s infinite;
 }
 
 @keyframes scroll-1 {
@@ -357,11 +399,9 @@ textarea {
   }
 }
 
-
 /*************************************************** TIMLINE ONN *********************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-
 
 .container1 {
   min-height: 100vh;
@@ -373,7 +413,6 @@ textarea {
   /* background-image: linear-gradient(to right, rgb(38, 38, 39), rgb(0, 0, 153)); */
   background-color: #1b1b1b;
 }
-
 
 .heading-time {
   color: rgb(255, 255, 255);
@@ -508,7 +547,6 @@ textarea {
     background-color: rgb(63, 214, 214);
   }
 }
-
 
 .container1 p {
   padding: 10px;
@@ -959,34 +997,33 @@ footer .bottom-details .bottom_text {
 
 /* for desktop */
 .whatsapp_float {
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:10px;
-	right:10px;
-	background-color:rgb(63, 214, 214);
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-        font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-        z-index:100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(63, 214, 214);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
 .whatsapp-icon {
-	margin-top:16px;
+  margin-top: 16px;
 }
 /* for mobile */
-@media screen and (max-width: 767px){
-     .whatsapp-icon {
-	 margin-top:10px;
-     }
-    .whatsapp_float {
-        width: 40px;
-        height: 40px;
-        bottom: 10px;
-        right: 10px;
-        font-size: 22px;
-    }
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    font-size: 22px;
+  }
 }
-

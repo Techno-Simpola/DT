@@ -33,7 +33,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 </head>
 
-<body style="background-color: black;">
+<body>
     <div class="tm-container">
         <div>
             <div class="tm-row pt-4">
@@ -71,25 +71,26 @@
                                     <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="signup.html">Sign In</a>
+                                    <a class="nav-link tm-nav-link" href="/signup.html">Sign Up</a>
                                   </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
-    <section class="register-photo"  style="background-color: black;">
-        <div class="form-container" style="background-color: black;">
+
+    <section class="register-photo"  style="background-color: rgba(0, 0, 0, 0.062);">
+        <div class="form-container" style="background-color: black; border-radius: 10px 0px 0px 10px;">
             <div class="image-holder" style="border-radius: 10px 0px 0px 10px;"></div>
             <form method="post" style="background-color:rgb(29, 29, 29); border-radius: 0px 10px 10px 0px;">
-                <h2 class="text-center" style="color:rgb(63, 214, 214)"><strong>Sign Up to your account.</strong></h2>
-                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" ><p style="color:rgb(63, 214, 214)">Email</p></div>
-                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password" ><p style="color:rgb(63, 214, 214)">Password</p></div>
-               
+                <h2 class="text-center" style="color:rgb(63, 214, 214)"><strong>Create an account.</strong> </h2>
+                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"><p style="color:rgb(63, 214, 214);">Email</p></div>
+                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"><p style="color:rgb(63, 214, 214)">Password</p></div>
+                <div class="mb-3"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"><p style="color:rgb(63, 214, 214)">Password (repeat)</p></div>
                 <div class="mb-3">
-                    
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox"><p style="color:rgb(63, 214, 214)">I agree to the license terms.</p></label></div>
                 </div>
-                <div class="mb-3" ><button class="btn  d-block w-100" style="color:rgb(63, 214, 214)" type="submit" >Sign Up</button></div>
+                <div class="mb-3"><button class="btn  d-block w-100" type="submit" style="color:rgb(63, 214, 214)">Sign In</button></div><a class="already" href="login.html"><p style="color:rgb(63, 214, 214)">You already have an account? Login here.</p></a>
             </form>
         </div>
     </section>
@@ -99,6 +100,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/creative.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
 </body>
 
-</html>ss
+</html>
