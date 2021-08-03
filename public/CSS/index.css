@@ -399,19 +399,43 @@ textarea {
   }
 }
 
+/********************** PRALLAX IMAGE STARTING ****************************/
+
+
+.parallax-img{
+   /* The image used */
+   background-image: linear-gradient(#070707da, #070707da),
+   url("/img/parallax-image.jpg");
+
+   /* Set a specific height */
+   min-height: 500px;
+
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+
+
+
 /*************************************************** TIMLINE ONN *********************************************************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
-.container1 {
+.cos-1 {
   min-height: 100vh;
   width: 100%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 100px 0;
+  justify-content: center; */
   /* background-image: linear-gradient(to right, rgb(38, 38, 39), rgb(0, 0, 153)); */
-  background-color: #1b1b1b;
+  background-color: #000;
+}
+
+.text-center{
+  padding: 100px 0;
 }
 
 .heading-time {
@@ -1007,7 +1031,6 @@ footer .bottom-details .bottom_text {
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
   z-index: 100;
 }
 

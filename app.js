@@ -1,7 +1,7 @@
 const express = require('express');
 // const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
-// const path = require('path');
+const path = require('path');
 
 const app = express();
 
@@ -12,6 +12,7 @@ app.set('view engine','ejs');
 
 // uses public folder for static files
 app.use(express.static("public"));
+// app.use(express.favicon('public/img/favicon.ico'));
 app.use('/css',express.static(__dirname + "public/CSS"));
 app.use('/js',express.static(__dirname + "public/js"));
 app.use('/img',express.static(__dirname + "public/img"));

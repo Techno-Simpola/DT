@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
     <link href="CSS/bootstrap.min.css" rel="stylesheet" />
     <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/index.css">
-
+    <link rel="stylesheet" href="/CSS/modal.css"> 
 
   <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -19,7 +20,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
     <!-- favicon using -->
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/" type="image/x-icon">
     
 
     <title>Dain Tree</title>
@@ -53,20 +54,20 @@
                         <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                             <ul class="navbar-nav text-uppercase">
                                 <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="index.html">Home <span
+                                    <a class="nav-link tm-nav-link" href="index.ejs">Home <span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                    <a class="nav-link tm-nav-link" href="about.ejs">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link tm-nav-link" onclick="onLogin();">Form</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link tm-nav-link" href="contact.ejs">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link tm-nav-link" href="login.html">Log In</a>
+                                  <a class="nav-link tm-nav-link" href="login.ejs">Log In</a>
                                 </li>
                                 
                             </ul>
