@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa&display=swap");
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
@@ -15,6 +14,24 @@ body {
   min-width: 760px;
   background: rgb(255, 255, 255);
 }
+
+/*no scroll-bar*/
+body {
+  overflow-y: scroll;
+  cursor: context-menu;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* no scroll bar ended*/
+
 .tm-sitename {
   font-family: "Brush Script MT", cursive !important;
   font-size: 50px;
@@ -221,10 +238,9 @@ hr {
   color: #9cc;
 }
 
-.text-white{
-   font-weight: bold;
+.text-white {
+  font-weight: bold;
 }
-
 
 /* Service */
 .tm-service-text {
@@ -262,19 +278,28 @@ textarea {
   outline: none;
 }
 
-.form-control::placeholder{
-   color: rgb(153, 153, 153) !important;
+.form-control::placeholder {
+  color: rgb(153, 153, 153) !important;
 }
 
 .header-extradiv {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
   text-align: center;
   background-image: linear-gradient(90deg, #000000 0%, #000000 89%);
 }
+
+.header-extradiv .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .promo-title {
   padding-top: 20px;
@@ -305,6 +330,7 @@ textarea {
   margin-top: 4px !important;
   margin-bottom: 4px !important;
   margin-right: 0px;
+  max-width: 574px;
 }
 
 .sp-between h2 {
@@ -335,23 +361,24 @@ textarea {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
-  height: 500px;
+  height: 800px;
   box-shadow: 0px 0px 80px 0px rgba(70, 70, 70, 0.5);
   border-radius: 10px;
 }
+
 
 .content-animate {
   display: flex;
 }
 
-.text-known{
+.text-known {
   width: 600px;
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
-.text-white-1{
-  font-family: 'Abril Fatface', cursive;
+.text-white-1 {
+  font-family: "Abril Fatface", cursive;
   padding-bottom: 10px;
 }
 
@@ -365,8 +392,8 @@ textarea {
   background-color: #1b1b1b;
 }
 
-.card-1{
- margin-bottom: 10px;
+.card-1 {
+  margin-bottom: 30px;
 }
 
 .card img {
@@ -374,17 +401,17 @@ textarea {
 }
 
 .cards-moving-1 {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
   position: relative;
   top: 0;
-  animation: scroll-1 20s linear 0s infinite;
+  animation: scroll-1 40s linear 0s infinite;
 }
 
 .cards-moving-2 {
   position: relative;
   bottom: 69%;
-  animation: scroll-2 20s linear 0s infinite;
+  animation: scroll-2 40s linear 0s infinite;
 }
 
 @keyframes scroll-1 {
@@ -401,24 +428,20 @@ textarea {
 
 /********************** PRALLAX IMAGE STARTING ****************************/
 
+.parallax-img {
+  /* The image used */
+  background-image: linear-gradient(#070707da, #070707da),
+    url("/img/parallax-image.jpg");
 
-.parallax-img{
-   /* The image used */
-   background-image: linear-gradient(#070707da, #070707da),
-   url("/img/parallax-image.jpg");
+  /* Set a specific height */
+  min-height: 500px;
 
-   /* Set a specific height */
-   min-height: 500px;
-
-   /* Create the parallax scrolling effect */
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size:cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
-
 
 /*************************************************** TIMLINE ONN *********************************************************************/
 
@@ -434,7 +457,7 @@ textarea {
   background-color: #000;
 }
 
-.text-center{
+.text-center {
   padding: 100px 0;
 }
 
@@ -674,6 +697,10 @@ button:focus {
   border-bottom-right-radius: 5px;
 }
 
+/* MEMBERSHIP CARD DES */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}
 .mb-75 {
   margin-bottom: 75px;
 }
